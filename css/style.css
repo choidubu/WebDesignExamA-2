@@ -34,6 +34,10 @@ body {
     color: #333333;
 }
 
+.wrap {
+    position: relative;
+}
+
 .inner {
     width: 1200px;
     margin: auto;
@@ -101,7 +105,7 @@ nav>ul>li.on>a {
 .menubg {
     width: 100%;
     height: 100px;
-    background: #000;
+    background: #000000;
     position: absolute;
     top: 100px;
     left: 0;
@@ -113,14 +117,185 @@ nav>ul>li.on>a {
 .slide {
     height: 300px;
     background: #77bb44;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide ul {
+    display: flex;
+    width: 3600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide ul li {
+    width: 1200px;
+    height: 300px;
+    position: absolute;
+}
+
+.slide ul li.s1 {
+    background: url(../img/slide1.jpg) no-repeat center/cover;
+}
+
+
+.slide ul li.s2 {
+    background: url(../img/slide2.jpg) no-repeat center/cover;
+}
+
+.slide ul li.s3 {
+    background: url(../img/slide3.jpg) no-repeat center/cover;
+}
+
+.slide ul li a {
+    display: block;
+    height: 100%;
+}
+
+.slide ul li h2 {
+    background: rgba(0, 50, 0, .7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
 }
 
 .con {
     height: 200px;
-    background: #88CC88;
+    background: #AABBAA;
+    display: flex;
+}
+
+.con1 {
+    padding: 10px;
+    width: 400px;
+}
+
+.con1 h2 {
+    background: #337722;
+    border-radius: 10px;
+    width: 120px;
+    padding: 5px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.con1 table th {
+    text-align: left;
+}
+
+.con1 table tr {
+    border-bottom: 1px dashed #000000;
+}
+
+.con1 table a {
+    display: block;
+    padding: 2px;
+    width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.con2 {
+    padding: 10px;
+    width: 400px;
+}
+
+.con2 h2 {
+    background: #337722;
+    border-radius: 10px;
+    width: 120px;
+    padding: 5px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.con2 ul {
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+}
+
+.con3 {
+    padding: 10px;
+    width: 400px;
+}
+
+
+.con3 a {
+    display: block;
+    background: url(../img/banner.jpg) center/cover;
+    border-radius: 10px;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.con .bannertitle {
+    background: rgba(0, 0, 0, .8);
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.con .bannertext {
+    background: rgba(0, 0, 0, .6);
+    color: #ffffff;
+    font-size: 13px;
+    padding: 2px;
 }
 
 footer {
     height: 100px;
-    background: #337722;
+    background: #555555;
+    position: relative;
+    color: #ffffff;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+footer select {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+}
+
+footer .fcopy {
+    font-size: 13px;
+}
+
+.popcon {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    display: none;
+}
+
+.popcon h2 {
+    background: #555555;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.popcon p {
+    margin-top: 35px;
 }
