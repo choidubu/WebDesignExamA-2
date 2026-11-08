@@ -132,7 +132,7 @@ nav>ul>li.on>a {
 .slide ul li {
     width: 1200px;
     height: 300px;
-    position: absolute;
+    position: relative;
 }
 
 .slide ul li.s1 {
@@ -275,7 +275,7 @@ footer .fcopy {
     font-size: 13px;
 }
 
-.popcon {
+.popup {
     position: absolute;
     width: 500px;
     height: 300px;
@@ -289,13 +289,13 @@ footer .fcopy {
     display: none;
 }
 
-.popcon h2 {
+.popup h2 {
     background: #555555;
     color: #ffffff;
     border-radius: 20px;
     padding: 5px;
 }
 
-.popcon p {
+.popup p {
     margin-top: 35px;
 }
